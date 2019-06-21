@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+p{
+line-height:4.0;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಛಂದಸ್ಸು</h1></b><center></div>
+    <div class="panel-body">
+    <p>
+<b><h1>ಛಂದಸ್ಸು</h1></b></br>
+
+<p><h3>
+<b>1.ಮಾತ್ರಾಗಣ</b>: ಮಾತ್ರೆಗಳ ಆಧಾರದಿಂದ ಗಣ ವಿಭಾಗ ಮಾಡುವುದೇ ಮಾತ್ರಾಗಣ.ಮೂರು,ನಾಲ್ಕು ಅಥವಾ ಐದು ಮಾತ್ರೆಗಳಿಗೆ</p> ಒಂದೊಂದು ಗಣ ಮಾಡಲಾಗುವುದು.ಸಾಲಿನಲ್ಲಿರುವ ಎಲ್ಲಾ ಮಾತ್ರೆಗಳನ್ನು ಗಣಗಳಾಗಿ ವಿಂಗಡಿಸಬೇಕು.</br></br>
+
+<b>ಮಾತ್ರೆ</b>: ಅಕ್ಷರವನ್ನು ಉಚ್ಚರಿಸಲು ಬೇಕಾದ ಕಾಲವನ್ನು ಮಾತ್ರೆ ಎಂಬ ಮಾನದಿಂದ ಅಳೆಯಲಾಗುವುದು.</br></br>
+
+<b>ಲಘು</b>: ಒಂದು ಮಾತ್ರಾಕಾಲದಲ್ಲಿ ಉಚ್ಚರಿಸಲ್ಪಡುವ ಅಕ್ಷರಗಳನ್ನು ಲಘು <b>(U)</b> ಎನ್ನುವರು.</br></br>
+
+<b>ಗುರು</b>: ಎರಡು ಮಾತ್ರಾಕಾಲದಲ್ಲಿ ಉಚ್ಚರಿಸಲ್ಪಡುವ ಅಕ್ಷರಗಳನ್ನು ಗುರು <b>(_)</b> ಎಂದು ಕರೆಯುವರು.</br></br>
+
+<b>ಪ್ರಸ್ತಾರ</b>: ಲಘು ಗುರುಗಳನ್ನು ಗುರುತಿಸುವ ಕ್ರಿಯೆಯನ್ನು ಪ್ರಸ್ತಾರ ಹಾಕುವುದು ಎನ್ನುವರು.</h3></p></br></br>
+<p><h3><b>2.ಅಕ್ಷರಗಣ: </b>ಅಕ್ಷರಗಳ ಆಧಾರದಿಂದ ಗಣ ವಿಭಾಗ ಮಾಡುವುದೇ ಅಕ್ಷರಗಣ.ಮೂರು ಮೂರು ಅಕ್ಷರಗಳಿಗೆ ಒಂದೊಂದರಂತೆ ಗಣ</p> ವಿಂಗಡಣೆ ಮಾಡಲಾಗುವುದು.ಪದ್ಯದ ಸಾಲುಗಳಲ್ಲಿರುವ ಎಲ್ಲ ಅಕ್ಷರಗಳೂ ಗಣಗಳಾಗಿ ವಿಂಗಡಿಸಲ್ಪಡಬೇಕೆಂಬ ನಿಯಮವಿಲ್ಲ.ಗಣ</p> ವಿಂಗಡಣೆಯ ನಂತರ ಒಂದು ಅಥವಾ ಎರಡು ಅಕ್ಷರಗಳು ಶೇಷವಾಗಿ ಉಳಿಯಬಹುದು.</br></br>
+<p><h3><b>ಛಂದಸ್ಸು</b>-ಪದ್ಯವನ್ನು ರಚಿಸುವ ಶಾಸ್ತ್ರ.ಛಂದಸ್ಸಿನ ಶಾಸ್ತ್ರದ ಪ್ರಕಾರ ರಚಿತವಾದ ಪದ್ಯವನ್ನು ಛಂದೋಬದ್ಧ ಪದ್ಯ ಎನ್ನುವರು.ಛಂದಸ್ಸು ಕನ್ನಡ </p>ಸಾಹಿತ್ಯ,ಸಂಸ್ಕೃತ ಸಾಹಿತ್ಯದ ಆರಂಭದ ದಿನಗಳಿಂದಲೂ ಬಳಕೆಯಲ್ಲಿದ್ದು,ಕಾಲಕ್ರಮದಲ್ಲಿ ಹಲವಾರು ಪರಿಷ್ಕರಣೆಗೊಳಪಟ್ಟಿದೆ.</h3></P>
+<h3>ಛಂದಸ್ಸಿನಲ್ಲಿ ಮುಖ್ಯವಾಗಿ ಮೂರು ವಿಭಾಗಗಳಿವೆ:</h3><h3>
+1.<b> ಪ್ರಾಸ<b></br>
+2.<b> ಯತಿ<b></br>
+3.<b> ಗಣ<b></br>
+</h3></br>
+<p><h3>1.<b>ಪ್ರಾಸ</b>: ಒಂದು ನಿರ್ದಿಷ್ಟ ವ್ಯಂಜನವು ಪದ್ಯದ ಪ್ರತಿ ಸಾಲಿನ ಆದಿ, ಮಧ್ಯ, ಅಥವಾ ಅಂತ್ಯದಲ್ಲಿ ನಿಯತವಾಗಿ ಬರುವುದೇ ಪ್ರಾಸ.ಕಾವ್ಯದ</P> ಪ್ರತಿಸಾಲಿನ ಒಂದು ಮತ್ತು ಎರಡನೆಯ ಸ್ವರಗಳ ನಡುವೆ ಬರುವ ಪ್ರಾಸ ಆದಿಪ್ರಾಸ.
+ಪ್ರತಿಸಾಲಿನ ಮಧ್ಯದಲ್ಲಿ ಬರುವ ಪ್ರಾಸವು ಮಧ್ಯಪ್ರಾಸ.</p>ಇದು ಸಾಮಾನ್ಯವಾಗಿ ಮೊದಲ ಸಾಲಿನಲ್ಲಿ, ಅದರಲ್ಲೂ ವಿಶೇಷವಾಗಿ ತ್ರಿಪದಿಗಳಲ್ಲಿ ಕಂಡುಬರುತ್ತದೆ.
+ಹಾಗೆಯೇ, ಪ್ರತಿಸಾಲಿನ ಅಂತ್ಯದಲ್ಲಿ</p> ಬರುವ ಪ್ರಾಸವೇ ಅಂತ್ಯಪ್ರಾಸ.</h3></p></br>
+
+<p><h3>2.<b>ಯತಿ</b>: ಯತಿ ಎಂದರೆ ಕಾವ್ಯವನ್ನು ವಾಚಿಸುವಾಗ ಅರ್ಥಕ್ಕೆ ಅಡ್ಡಿಯಾಗದಂತೆ ಉಸಿರು ತೆಗೆದುಕೊಳ್ಳಲು ನಿಲ್ಲಿಸುವ ತಾಣ.</p></h3></br>
+
+<p><h3>3.<b>ಗಣ</b>: ಗಣ ಎಂದರೆ ಗುಂಪು. ಛಂದಸ್ಸಿನಲ್ಲಿ ಮಾತ್ರಾಗಣ, ಅಕ್ಷರಗಣ ಮತ್ತು ಅಂಶಗಣಗಳೆಂಬ ಮೂರು ವಿಧದ ಗಣಗಳಿವೆ.</p></h3></br>
+</p>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Home')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Laghu_Guru')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಶರ  ಷಟ್ಪದಿ</h1></b><center></div>
+    <div class="panel-body">
+ <h2><strong>ಶರ  ಷಟ್ಪದಿ </strong></h2>  </br> </br>
+<h3>ಶರ ಷಟ್ಪದಿಯು ಷಟ್ಪದಿಗಳಲ್ಲಿನ ಪ್ರಮುಖ ಪ್ರಕಾರಗಳಲ್ಲೊಂದು.ಶರವೇ ಷಟ್ಪದಿಯಲ್ಲಿ ಅತ್ಯಂತ ಚಿಕ್ಕದು.ನಾಗವರ್ಮ ಹೇಳಿರುವ ಇದರ</p>ಲಕ್ಷಣಗಳು.ಶರ ಷಟ್ಪದಿಯಲ್ಲಿ ಆರು ಪಾದಗಳಿರುತ್ತವೆ. <b>1,೨,೪,೫ನೆಯ ಸಾಲುಗಳು ಸಮನಾಗಿದ್ದು,
+೪ ಮಾತ್ರೆಯ ಎರಡು</p>ಗಣಗಳಿರುತ್ತವೆ</b>.<b>೩ ಮತ್ತು ೬ನೆಯ ಪಾದಗಳಲ್ಲಿ ೪ ಮಾತ್ರೆಯ ೩ ಗಣಗಳಿದ್ದು,ಕೊನೆಯಲ್ಲಿ ಒಂದು ಗುರು ಬರುತ್ತದೆ(ಲಘು</p> ಬಂದರೂ ಗುರು ಎಂದುಕೊಳ್ಳಬೇಕು)</b>. ಇದರಲ್ಲಿ ಮಧ್ಯೆ ಗುರುವಿನ ಅಂದರೆ <b>('U _ U')</b>ಜಗಣ,ಶರ ಷಟ್ಪದಿಯ ಯಾವ ಗಣದಲ್ಲಿಯೂ</p>ಬರಕೂಡದು. </br> </br>
+<strong>ಉದಾಹರಣೆ:</strong> </br></p> 
+ಈಶನ ಕರುಣೆಯ </br>
+ನಾಶಿಸು ವಿನಯದಿ </br>
+ದಾಸನ ಹಾಗೆಯೆ ನೀ ಮನವೇ </br>
+ಕ್ಲೇಶದ ವಿಧ ವಿಧ </br>
+ಪಾಶದ ಹರಿದು ವಿ </br>
+ಲಾಸದಿ ಸತ್ಯವ ತಿಳಿಯನವೇ </br> </br>
+<strong>ಇದರ ಛಂದಸ್ಸಿನ ಪ್ರಸ್ತಾರ: </strong></br></br>
+_ UU |UU U U |</br></p>
+ಈಶನ |ಕರುಣೆಯ|</br></p>
+_ UU  |UU U U |</br></p>
+ನಾಶಿಸು |ವಿನಯದಿ|</br></p>
+_ UU |_ UU   |_  UU |_ </br></p>
+ದಾಸನ |ಹಾಗೆಯೆ |ನೀ ಮನ|ವೇ</br></p>
+_ UU |UU UU|</br></p>
+ಕ್ಲೇಶದ |ವಿಧ ವಿಧ|</br></p>
+_ UU |UUU U|</br></p>
+ಪಾಶದ |ಹರಿದು ವಿ|</br></p>
+_ UU |_ UU |UUUU  |_ </br></p>
+ಲಾಸದಿ |ಸತ್ಯವ |ತಿಳಿಯನ|ವೇ</br></br></p>
+<strong>'|' ಸಂಜ್ಞೆಯು ಗಣವಿಭಾಗವನ್ನು ತೋರಿಸುತ್ತದೆ. ಪದ್ಯವು ಕೆಳಗಿನಂತೆ ಗಣವಿಂಗಡನೆಯಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ:</strong> </br></p>
+೪|೪ </br>
+೪|೪ </br>
+೪|೪|೪|- </br>
+೪|೪ </br>
+೪|೪ </br>
+೪|೪|೪|- </h3></br>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Shatpadi')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Kusuma')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

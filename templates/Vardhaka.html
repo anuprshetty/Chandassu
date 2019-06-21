@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+    <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ವಾರ್ಧಕ  ಷಟ್ಪದಿ</h1></b><center></div>
+    <div class="panel-body">
+ <h2><strong>ವಾರ್ಧಕ  ಷಟ್ಪದಿ</strong></h2> </br> </br>
+
+<h3>ವಾರ್ಧಕ ಷಟ್ಪದಿಯು ಷಟ್ಪದಿಗಳಲ್ಲಿನ ಪ್ರಮುಖ ಪ್ರಕಾರಗಳಲ್ಲೊಂದು.ಮುದ್ದಣ ವಿರಚಿತ ಶ್ರೀರಾಮ ಪಟ್ಟಾಭಿಷೇಕ ಇರುವುದು ವಾರ್ಧಕ </p>ಷಟ್ಪದಿಯಲ್ಲಿಯೇ.ವಾರ್ಧಕ ಷಟ್ಪದಿಯಲ್ಲಿ ಆರು ಪಾದಗಳಿರುತ್ತವೆ.1,೨,೪,೫ನೆಯ ಸಾಲುಗಳು ಸಮನಾಗಿದ್ದು,೫ ಮಾತ್ರೆಯ ನಾಲ್ಕು</p> ಗಣಗಳಿರುತ್ತವೆ.೩ ಮತ್ತು ೬ನೆಯ ಪಾದಗಳಲ್ಲಿ ೫ ಮಾತ್ರೆಯ ಆರುಗಳಗಳಿದ್ದು,ಕೊನೆಯಲ್ಲಿ ಒಂದು ಗುರು ಇರುತ್ತದೆ.ಪದ್ಯವು</p> ಆದಿಪ್ರಾಸದಿಂದ ಕೂಡಿರುತ್ತದೆ. </br></br>
+<strong>ಉದಾಹರಣೆ</strong></br></br>
+ಬಲ್ಗಯ್ಯ ನೃಪರಂಜಿ ತಡೆಯದೆರ ಘೂದ್ವಹನ</p>
+ಸೊಲ್ಗೇಳಿ ನಮಿಸಲಿಳೆಯೊಳ್ ಚರಿಸುತಧ್ವರದ</p>
+ನಲ್ಗುದುರೆ ಬಂದು ವಾಲ್ಮೀಕಿಯನಿಜಾಶ್ರಮದ ವಿನಿಯೋಗದು ಪವನದೊಳು</p>
+ಪುಲ್ಗಳಪ ಸುರ್ಗೆಳಸಿ ಪೊಕ್ಕಡಾ ತೋಟಗಾ</p>
+ವಲ್ಗೆತನ್ನೊಡನಾಡಿ ಗಳಕೂಡಿ ಲೀಲೆಮಿಗೆ</p>
+ಬಿಲ್ಗೊಂಡು ನಡೆತಂದ ವಂಕಂಡ ನರ್ಚಿತಸು ವಾಜಿಯಂ ವೀರಲವನು</br></br>
+<strong>ಇದರ ಛಂದಸ್ಸಿನ ಪ್ರಸ್ತಾರ:</strong></br></br>
+_ _ U |UU_ U |UUUUU |_ UUU|</br></p>
+ಬಲ್ಗಯ್ಯ |ನೃಪರಂಜಿ |ತಡೆಯದೆರ |ಘೂದ್ವಹನ|</br>
+_ _ U |UUUUU|_   UUU|_ UUU|</br></p>
+ಸೊಲ್ಗೇಳಿ |ನಮಿಸಲಿಳೆ|ಯೊಳ್ ಚರಿಸು|ತಧ್ವರದ|</br>
+_ UUU |_ U _ |_ UUU|_ UUU |UU_ U|U UUUU|_</br></p>
+ನಲ್ಗುದುರೆ |ಬಂದು ವಾ|ಲ್ಮೀಕಿಯನಿ|ಜಾಶ್ರಮದ |ವಿನಿಯೋಗ|ದು ಪವನದೊ|ಳು</br>
+_ UUU |_ UUU |_ U_  |_ U_ |</br></p>
+ಪುಲ್ಗಳಪ |ಸುರ್ಗೆಳಸಿ |ಪೊಕ್ಕಡಾ |ತೋಟಗಾ|</br>
+_ U_ |UU_ U |UU_ U |_ UUU|</br></p>
+ವಲ್ಗೆತ|ನ್ನೊಡನಾಡಿ |ಗಳಕೂಡಿ |ಲೀಲೆಮಿಗೆ|</br>
+_ _ U |UU_ U |_ _ U |_ UUU |_ U_  |_ UUU|_</br></p>
+ಬಿಲ್ಗೊಂಡು |ನಡೆತಂದ |ವಂಕಂಡ |ನರ್ಚಿತಸು |ವಾಜಿಯಂ |ವೀರಲವ|ನು</br></br>
+<strong>'|' ಸಂಜ್ಞೆಯು ಗಣವಿಭಾಗವನ್ನು ತೋರಿಸುತ್ತದೆ. ಪದ್ಯವು ಕೆಳಗಿನಂತೆ ಗಣವಿಂಗಡನೆಯಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ:</strong></br></br>
+೫|೫|೫|೫</br>
+೫|೫|೫|೫</br>
+೫|೫|೫|೫|೫|೫|-</br>
+೫|೫|೫|೫</br>
+೫|೫|೫|೫</br>
+೫|೫|೫|೫|೫|೫|-</h3></br>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Bhamini')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Parivardhini')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

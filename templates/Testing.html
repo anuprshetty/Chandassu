@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+.floatLeft { width: 50%; float: left; }
+.floatRight {width: 50%; float: right; }
+.container { overflow: hidden; }
+h4{
+font-size:150%;
+}
+</style>
+<script>
+function checkData(){
+var txtCheck=document.formName;
+if(txtCheck.textarea.value==0){
+alert("Input field cannot be empty");
+txtCheck.textarea.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <!--<div class="panel panel-default">-->
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h3>Testing</h3></b><center></div>
+    <div class="panel-body">
+<div class=floatLeft>
+<form name="formName" action = "http://localhost:5000/result" method = "POST" onSubmit="return checkData();">
+<textarea name="textarea" rows="15" cols="30" placeholder="Input the poem here for testing"></textarea>
+<p><center><input type = "Submit" name = "Submit" value="Submit" /></center></p>
+</form>
+</div>
+<div class="floatRight">
+<div class="panel panel-default">
+    <div class="panel-heading" ><center><b><h2>Note</h2></b><center></div>
+    <div class="panel-body">
+<p><ul><li><h4>Input Kannada poem/verse</h4></li>
+<li><h4>Input can contain special characters also</h4></li>
+<li><h4>Copy the input from any websites or from the link given below</h4></li>
+<li><h4>To copy the input from database <a href="{{ url_for('files')}}">Click here</a></h4></li>
+<li><h4>To input poem from the user <a href="http://kannada.changathi.com/">Click here</a></h4></li>
+<li><h4>To input poem from the internet <a href="http://padyapaana.com/">Click here</a></h4></li></ul></ul>
+</div></div></div>
+</div>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Vrutta')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('exe1')}}">ಮುಂದಿನ ಪುಟ</a></li>
+    <!--<li class="next"><a href="#">Next</a></li>-->
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p></br>
+</div>
+</body>
+</html>
+

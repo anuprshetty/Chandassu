@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+    <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಖ್ಯಾತಕರ್ಣಾಟಕ ವೃತ್ತಗಳು</h1></b><center></div>
+    <div class="panel-body">
+<h2><strong>ಖ್ಯಾತಕರ್ಣಾಟಕ ವೃತ್ತಗಳು</strong></h2> </br> </br>
+<p><h3><b>(೧) ಉತ್ಪಲಮಾಲಾವೃತ್ತದ ಲಕ್ಷಣ</b></p></br>
+<p>	
+    ನಾಲ್ಕು ಸಮಾನ ಸಾಲುಗಳುಳ್ಳ ಪದ್ಯ.  ಪ್ರತಿಸಾಲಿನಲ್ಲೂ ೨೦ ಅಕ್ಷರಗಳಿವೆ.(ವ್ಯಂಜನವರ್ಣಗಳನ್ನುಲೆಕ್ಕಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಕೂಡದು) ಪ್ರತಿ</p> ಸಾಲಿನಲ್ಲೂ <b>ಭ, ರ, ನ, ಭ, ಭ, ರ</b> ಗಣಗಳೂ,ಮೇಲೆ ಒಂದು ಲಘುಮತ್ತು ಒಂದು ಗುರು ಹೀಗೆ ಬರುವ ವೃತ್ತವೇ</p> ಉತ್ಪಲಮಾಲಾವೃತ್ತವೆನಿಸುವುದು.
+</p></br>
+<b>ಸೂತ್ರ:-</b> ಉತ್ಪಲಮಾಲೆಯಪ್ಪುದು ಭರಂ ನಭಭಂ ರಲಗಂ ನೆಗಳ್ದಿರಲ್</br></br>
+<strong>ಉದಾಹರಣೆ:</h3></strong></br>
+<img src="{{url_for('static',filename='images/1.png')}}" />
+
+</p>
+</br>
+<p><h3><b>(೨) ಚಂಪಕಮಾಲಾವೃತ್ತದ ಲಕ್ಷಣ</b> </p></br>
+<p>	
+ನಾಲ್ಕು ಸಮಾನಪಾದಗಳುಳ್ಳ ಪದ್ಯ.ಪ್ರತಿಯೊಂದು ಪಾದದಲ್ಲೂ ೨೧ ಅಕ್ಷರಗಳಿವೆ.ಪ್ರತಿಪಾದದಲ್ಲಿಯೂ <b>ನ, ಜ, ಭ, ಜ, ಜ, ಜ, ರ</b> ಎಂಬ</p>
+ಏಳು ಗಣಗಳಿರುತ್ತವೆ.ಇಂಥ ವೃತ್ತಗಳೆಲ್ಲಚಂಪಕಮಾಲಾವೃತ್ತಗಳೆನಿಸುವುವು.
+</p></br>
+<b>ಸೂತ್ರ:-</b> ನಜಭಜಜಂಜರಂ ಬಗೆಗೊಳುತ್ತಿರೆ ಚಂಪಕಮಾಲೆಯೆಂದಪರ್ </br></br>
+<strong>ಉದಾಹರಣೆ:</h3></strong></br>
+<img src="{{url_for('static',filename='images/2.png')}}" />
+</p>
+</br></br>
+<p><h3><b>(೩) ಶಾರ್ದೂಲವಿಕ್ರೀಡಿತವೃತ್ತದ ಲಕ್ಷಣ</b></p></br>
+<p>	
+ ನಾಲ್ಕು ಸಮಾನಪಾದಗಳುಳ್ಳ ಪದ್ಯ.ಪ್ರತಿ ಪಾದವೂ ೧೯ ಅಕ್ಷರಗಳಿಂದ ಕೂಡಿದೆ.ಪ್ರತಿ ಪಾದದಲ್ಲೂ ಮ,ಸ,ಜ,ಸ,ತ,ತ ಎಂಬ ಆರು ಗಣಗಳೂ</p> ಮೇಲೆ ಒಂದು ಗುರುವೂ ಇರುತ್ತವೆ.ಇಂಥ ವೃತ್ತಗಳಿಗೆಲ್ಲಶಾರ್ದೂಲವಿಕ್ರೀಡಿತವೃತ್ತಗಳೆನ್ನು ವರು.  
+</p></br>
+<b>ಸೂತ್ರ:-</b> ಕಣ್ಗೊಪ್ಪಲ್ ಮಸಜಂಸತತಂಗಮುಮಾ ಶಾರ್ದೂಲವಿಕ್ರೀಡಿತಂ </br></br>
+<strong>ಉದಾಹರಣೆ:</h3></strong></br>
+<img src="{{url_for('static',filename='images/3.png')}}"/>
+</p>
+</br></br>
+<p><h3><b>(೪) ಮತ್ತೇಭವಿಕ್ರೀಡಿತವೃತ್ತದ ಲಕ್ಷಣ</b>  </p></br>
+<p>	
+ನಾಲ್ಕು ಸಮಾನ ಪಾದಗಳುಳ್ಳ ಪದ್ಯ.ಪ್ರತಿ ಪಾದದಲ್ಲೂ ಇಪ್ಪತ್ತು ಅಕ್ಷರಗಳಿವೆ.ಪ್ರತಿಪಾದವೂ <b>ಸ,ಭ,ರ,ನ,ಮ,ಯ</b> ಗಣಗಳಿಂದಲೂ ಮೇಲೊಂದು</p>ಲಘು ಮತ್ತು ಒಂದುಗುರುವಿನಿಂದಲೂ ಕೂಡಿದಪದ್ಯಜಾತಿಯು 
+ಮತ್ತೇಭವಿಕ್ರೀಡಿತವೃತ್ತ ವೆನಿಸುವುದು.
+</p></br>
+<b>ಸೂತ್ರ:-</b> ಸಭರಂನಂದುಯಲಂಗಮುಂ ಬಗೆಗೊಳಲ್ ಮತ್ತೇಭವಿಕ್ರೀಡಿ0ತಂ</br></br>
+<strong>ಉದಾಹರಣೆ:</h3></strong></br> 
+<img src="{{url_for('static',filename='images/4.png')}}" />
+</p>
+</br></br>
+<p><h3><b>(೫) ಸ್ರಗ್ಧರಾವೃತ್ತ ಲಕ್ಷಣ</b>  </p></br>
+<p>	
+ನಾಲ್ಕು ಸಮಾನ ಪಾದಗಳುಳ್ಳ ಪದ್ಯ.ಪ್ರತಿಪಾದದಲ್ಲಿಯೂ ಇಪ್ಪತ್ತೊಂದು ಅಕ್ಷರಗಳಿರುತ್ತವೆ.ಪ್ರತಿಯೊಂದು ಪಾದದಲ್ಲೂ <b>ಮ,ರ,ಭ,ನ,ಯ,</p>ಯ,ಯ</b> ಗಣಗಳಿರುತ್ತವೆ.ಈ ರೀತಿಯ ವೃತ್ತ ಜಾತಿಗೆ
+‘ಸ್ರಗ್ಧರಾವೃತ್ತ’ವೆನ್ನುವರು.ಇದರ ಸೂತ್ರವನ್ನು ಕೆಳಗಿನಂತೆ ಹೇಳಬಹುದು.
+</p></br>
+<b>ಸೂತ್ರ:-</b>ತೋರಲ್ ಮಂರಂಭನಂಮೂಯಗಣಮುಮದೆ ತಾಂ ಸ್ರಗ್ಧರಾವೃತ್ತಮಕ್ಕುಂ.</br></br> 
+<strong>ಉದಾಹರಣೆ:</h3></strong></br> 
+<img src="{{url_for('static',filename='images/5.png')}}" />
+</p>
+</br></br>
+<p><h3><b>(೬) ಮಹಾಸ್ರಗ್ಧರಾವೃತ್ತ ಲಕ್ಷಣ</b></p></br>
+<p>	
+ ನಾಲ್ಕು ಸಮಾನ ಪಾದಗಳುಳ್ಳ ಪದ್ಯ.ಪ್ರತಿ ಸಾಲಿನಲ್ಲೂ ೨೨ ಅಕ್ಷರಗಳಿವೆ.ಪ್ರತಿ ಸಾಲೂ <b>ಸ,ತ,ತ,ನ,ಸ,ರ,ರ</b> ಗಣಗಳಿಂದಲೂ,ಮೇಲೊಂದು</p>ಗುರುವಿನಿಂದಲೂ ಕೂಡಿರುತ್ತದೆ.ಇದರ ಸೂತ್ರವು ಕೆಳಗೆ ಇದೆ.
+</p></br>
+<b>ಸೂತ್ರ:-</b> ಸತತಂ ನಂ ಸಂ ರರಂಗಂ ನೆರೆದೆಸೆಯೆ ಮಹಾಸ್ರಗ್ಧರಾವೃತ್ತಮಕ್ಕುಂ</br></br>
+<strong>ಉದಾಹರಣೆ:</h3></strong></br> 
+<img src="{{url_for('static',filename='images/6.png')}}" />
+</p>
+</br></br>
+
+<!--<p>
+<strong>ಕಂದದ ನಿಯಮಗಳು:</strong>
+
+1.ಇದರಲ್ಲಿ ವಿಷಮ ಸ್ಥಾನಗಳಲ್ಲಿ ಅಂದರೆ 1,3,5,7 ಹಾಗೇ 9,11,13,15 ನೇ ಗಣಗಳಲ್ಲಿ ಜಗಣ ಅಂದರೆ ಮಧ್ಯಗುರು ಇರುವ U_U ವಿನ್ಯಾಸ ಬರಬಾರದು</br>
+2. ಎರಡನೇ ಹಾಗೂ ನಾಲ್ಕನೇ ಸಾಲಿನ ಕೊನೆಯ ಗಣವು ಅಂತ್ಯಗುರುಯುಕ್ತವಾಗಿರಬೇಕು. ಅಂದರೆ UU_ ಅಥವಾ __ ಈ ವಿನ್ಯಾಸಗಳು ಬರಬಹುದು.</br>
+3. 6ನೇ ಹಾಗೂ 14ನೇ ಗಣಗಳು ಮಾತ್ರ ಮಧ್ಯ ಗುರು ಇರುವ ಜಗಣ ವಿನ್ಯಾಸ (U_U) ಅಥವಾ ಸರ್ವಲಘುಗಳಿರುವ ವಿನ್ಯಾಸ (U,UUU) ಬರಬಹುದು. ಸರ್ವಲಘುಗಳಿರುವ ವಿನ್ಯಾಸ ಬಂದಲ್ಲಿ ಮೊದಲ ಅಕ್ಷರದ ನಂತರ ಯತಿ ಬರಲೇಬೇಕು.</br>
+4. ಉಳಿದ ಗಣಗಳಲ್ಲಿ ಯಾವ ರೀತಿಯ ವಿನ್ಯಾಸ ಬೇಕಾದರೂ ಬರಬಹುದು.</br>
+</p></br></br>
+<p>
+<strong>ಉದಾಹರಣೆ:</strong></br>
+
+U U U U | _ _ |U U U U |</br>
+ಒಡೆಯಲ |ಜಾಂಡಂ | ಕುಲಗಿರಿ |</br></br>
+
+U U _ | U U_|U _ U|UU_| U U_|</br>
+ಕೆಡೆಯಲ್| ಪಿಳಿಯ|ಲ್ಕೆ ಧಾತ್ರಿ|ದಿವಿಜರ್| ನಡುಗ-|</br></br>
+
+U U U U| U _U | _ U U|</br>
+ಲ್ಕೊಡರಿಸು |ವಿನಂ ಜ | ಟಾಸುರ|</br></br>
+
+U _ U| UU_|U_U | _ _|__|</br>
+ಹಿಡಿಂಬ | ಬಕವೈ|ರಿ ಸಿಂಹ|ನಾದಂ| ಗೆಯ್ದಂ||</br></br>
+</p>-->
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Akshara')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Testing')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

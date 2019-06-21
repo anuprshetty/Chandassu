@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಭೋಗ ಷಟ್ಪದಿ</h1></b><center></div>
+    <div class="panel-body">
+<h2><strong>ಭೋಗ  ಷಟ್ಪದಿ</strong></h2></br></br>
+	
+<h3>ಭೋಗ ಷಟ್ಪದಿಯು ಷಟ್ಪದಿಗಳಲ್ಲಿನ ಪ್ರಮುಖ ಪ್ರಕಾರಗಳಲ್ಲೊಂದು.ಭೋಗ ಷಟ್ಪದಿಯಲ್ಲಿ ಆರು ಪಾದಗಳಿರುತ್ತವೆ.<b>1,೨,೪,೫ನೆಯ</p> ಸಾಲುಗಳು ಸಮನಾಗಿದ್ದು,೩ ಮಾತ್ರೆಯ ೪ ಗಣಗಳಿರುತ್ತವೆ.೩ ಮತ್ತು ೬ನೆಯ ಪಾದಗಳಲ್ಲಿ ೩ ಮಾತ್ರೆಯ ೬</p> ಗಣಗಳಿದ್ದು,ಕೊನೆಯಲ್ಲಿ ಒಂದು ಗುರು ಬರುತ್ತದೆ(ಲಘು ಬಂದರೂ ಗುರು ಎಂದುಕೊಳ್ಳಬೇಕು)</b>.ಗುರುಬಸವನ</p> 'ವೃಷಭಗೀತೆ'ಕಾವ್ಯಭೋಗ ಷಟ್ಪದಿಯಲ್ಲಿದೆ</br></br>
+<strong>ಉದಾಹರಣೆಗೆ:</strong></br></p>
+ತಿರುಕನೋರ್ವನೂರ ಮುಂದೆ</br>
+ಮುರುಕು ಧರ್ಮಶಾಲೆಯಲ್ಲಿ</br>
+ವೊರಗಿರುತ್ತಲೊಂದು ಕನಸಕಂಡನೆಂತನೆ</br>
+ಪುರದ ರಾಜಸತ್ತನವಗೆ</br>
+ವರ ಕುಮಾರರಿಲ್ಲದಿರಲು</br>
+ಕರಿಯ ಕೈಗೆ ಕುಸುಮ ಮಾಲೆಯಿತ್ತು ಪುರದೊಳು</br></br>
+<strong>ಇದರ ಛಂದಸ್ಸಿನ ಪ್ರಸ್ತಾರ:</strong></br></br>
+UUU|_ U|_ U |_ U|</br></p>
+ತಿರುಕ|ನೋರ್ವ|ನೂರ |ಮುಂದೆ|</br></p>
+UUU |_ U|_ U|_ U|</br></p>
+ಮುರುಕು |ಧರ್ಮ|ಶಾಲೆ|ಯಲ್ಲಿ|</br></p>
+UUU|_ U|_ U |UUU|_ U|_ U|_</br></p>
+ವೊರಗಿ|ರುತ್ತ|ಲೊಂದು |ಕನಸ|ಕಂಡ|ನೆಂತ|ನೆ</br></p>
+UUU |_ U|_ U|UUU|</br></p>
+ಪುರದ |ರಾಜ|ಸತ್ತ|ನವಗೆ|</br></p>
+UU U|_ U|_ U|UUU|</br></p>
+ವರ ಕು|ಮಾರ|ರಿಲ್ಲ|ದಿರಲು|</br></p>
+UUU |_ U |UUU |_ U|_ U |UUU|_</br></p>
+ಕರಿಯ |ಕೈಗೆ |ಕುಸುಮ |ಮಾಲೆ|ಯಿತ್ತು |ಪುರದೊ|ಳು</br></br>
+<strong>'|' ಸಂಜ್ಞೆಯು ಗಣವಿಭಾಗವನ್ನು ತೋರಿಸುತ್ತದೆ. ಪದ್ಯವು ಕೆಳಗಿನಂತೆ ಗಣವಿಂಗಡನೆಯಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ:</strong></p></br>
+೩|೩|೩|೩</br>
+೩|೩|೩|೩</br>
+೩|೩|೩|೩|೩|೩|-</br>
+೩|೩|೩|೩</br>
+೩|೩|೩|೩</br>
+೩|೩|೩|೩|೩|೩|-</h3></br>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Kusuma')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Bhamini')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

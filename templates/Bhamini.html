@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಭಾಮಿನೀ  ಷಟ್ಪದಿ</h1></b><center></div>
+    <div class="panel-body">
+<body>
+    <h2><strong>ಭಾಮಿನೀ  ಷಟ್ಪದಿ</strong></h2></br></br>
+
+<h3>ಭಾಮಿನೀ ಷಟ್ಪದಿಯು ಷಟ್ಪದಿಗಳಲ್ಲಿನ ಪ್ರಮುಖ ಪ್ರಕಾರಗಳಲ್ಲೊಂದು.ಕುಮಾರವ್ಯಾಸನ ಗದುಗಿನ ಭಾರತವಿರುವುದು ಈ</p>ಛಂದಸ್ಸಿನಲ್ಲಿಯೆ.ಭಾಮಿನೀ ಷಟ್ಪದಿಯ ಪದ್ಯವೊಂದರಲ್ಲಿ ಆರು ಸಾಲಿಗಳಿರುತ್ತವೆ.ಮೂರನೆಯ,ಆರನೆಯ ಸಾಲುಗಳಲ್ಲಿ ೭ ಮಾತ್ರೆಗಳ</p>ಮೂರುಗಣಗಳೂ ಹಾಗು ಒಂದು ಗುರು ಇರುತ್ತವೆ.ಮಿಕ್ಕ ಸಾಲುಗಳಲ್ಲಿ ೭ ಮಾತ್ರೆಗಳ ಎರಡು ಗಣಗಳಿರುತ್ತವೆ.ಮತ್ತೊಂದು ಪ್ರಮುಖ</p> ನಿಯಮವೆಂದರೆ,೭ ಮಾತ್ರೆಗಳ ಗಣಗಳು ಕಡ್ಡಾಯವಾಗಿ ೩+೪ ಮಾದರಿಯಲ್ಲಿರಬೇಕು.ಅಂದರೆ ೩ ಮಾತ್ರೆಯ ಗಣದ ನಂತರ ೪</p> ಮಾತ್ರೆಯ ಗಣವು ಬಂದು,ಒಟ್ಟು ೭ ಮಾತ್ರೆಗಳ ಗಣವಾಗಬೇಕು.  </br> </br>
+<strong>ಪದ್ಯವು ಆದಿಪ್ರಾಸದಿಂದ ಕೂಡಿರುತ್ತದೆ. ಉದಾಹರಣೆಯಾಗಿ ಗದುಗಿನ ಭಾರತದ ಈ ಪ್ರಸಿದ್ಧ ಪದ್ಯವನ್ನು ನೋಡಿ:</strong></br></br>
+<strong>ಉದಾಹರಣೆಗೆ:</strong></br></p>
+ವೇದ ಪುರುಷನ ಸುತನ ಸುತನ ಸ</br>
+ಹೋದರನ ಹಮ್ಮಗನ ಮಗನ ತ</br>
+ಳೋದರಿಯ ಮಾತುಳನ ಮಾವನ ನತುಳಭುಜಬಲದಿ</br>
+ಕಾದು ಗೆಲಿದನನಣ್ಣನವ್ವೆಯ </br>
+ನಾದಿನಿಯ ಜಠರದಲಿ ಜನಿಸಿದ</br>
+ನಾದಿಮೂರುತಿ ಸಲಹೊ ಗದುಗಿನ ವೀರನಾರಯಣ</br></br>
+<strong>ಈ ಪದ್ಯವನ್ನು ಗಣಗಳಾಗಿ ವಿಂಗಡಿಸಿದಾಗ ಹೀಗೆ ಕಾಣುವುದು:</strong></br></p>
+_U | U U U U| U U U|U U UU|</br></p>
+ವೇದ| ಪುರುಷನ | ಸುತನ| ಸುತನ ಸ</br>
+_ U | UU_ | U U U|U UUU|</br></p>
+ಹೋದ|ರನ ಹೆ|ಮ್ಮಗನ| ಮಗನ ತ</br>
+_ U | U U _ | U U U| _ U U |U U U|UUUU|_</br></p>
+ಳೋದ|ರಿಯ ಮಾ|ತುಳನ| ಮಾವನ|ನತುಳ|ಭುಜಬಲ|ದಿ</br>
+_ U | UUUU| _U |_U U|</br></p>
+ಕಾದು| ಗೆಲಿದನ|ನಣ್ಣ|ನವ್ವೆಯ </br>
+_ U| U U U U|UUU| U U UU|</br></p>
+ನಾದಿ|ನಿಯ ಜಠ|ರದಲಿ| ಜನಿಸಿದ</br>
+_ U| _ U U| U U U| U U U U| _U | _U U| _<br></p>
+ನಾದಿ|ಮೂರುತಿ | ಸಲಹೊ| ಗದುಗಿನ | ವೀರ|ನಾರಯ|ಣ</br></br>
+<strong>'|' ಸಂಜ್ಞೆ ಗಣವಿಭಾಗವನ್ನು ತೋರಿಸುತ್ತದೆ. ಪದ್ಯವು ಕೆಳಗಿನಂತೆ ಗಣವಿಂಗಡನೆಯಾಗಿರುವುದನ್ನು ಗಮನಿಸಿ:</strong></br></br>
+೩|೪|೩|೪</br>
+೩|೪|೩|೪</br>
+೩|೪|೩|೪|೩|೪|-</br>
+೩|೪|೩|೪</br>
+೩|೪|೩|೪</br>
+೩|೪|೩|೪|೩|೪|-</h3></br>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Bhoga')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Vardhaka')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

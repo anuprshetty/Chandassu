@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ರಗಳೆ</h1></b><center></div>
+    <div class="panel-body">
+<h2><strong>ರಗಳೆ</strong></h2>
+<p><h3>	
+‘ರಗಳೆ’ ಎಂಬುದು ‘ರಘಟಾ’ಎಂಬ ಸಂಸ್ಕೃತ ಶಬ್ದದ ತದ್ಭವ ಪದ.ಕನ್ನಡದಲ್ಲಿ ಸಾಮಾನ್ಯವಾಗಿ ಉತ್ಸಾಹರಗಳೆ,ಮಂದಾನಿಲರಗಳೆ,ಲಲಿತರಗಳೆ</p> ಎಂದು ಮೂರು ವಿಧವಾದ ರಗಳೆಗಳು ಪ್ರಸಿದ್ಧವಾಗಿವೆ.ರಗಳೆಯ ಪದ್ಯಗಳಲ್ಲಿ ಇದುವರೆಗೆ ಹೇಳಿದ ನಾಲ್ಕು ಅಥವಾ ಆರು ಸಾಲುಗಳ</p> ಪದ್ಯಗಳಂತೆ,ಇಷ್ಟೇ ಸಾಲುಗಳಿರಬೇಕೆಂಬ ನಿಯಮವೇ ಇಲ್ಲ.ಎಷ್ಟು ಬೇಕಾದರೂ ಸಾಲುಗಳು ಹಾಗೆಯೇ ಬೆಳೆಯುತ್ತ ಹೋಗಬಹುದು</p>.ಆದರೆ ಎಲ್ಲ ಸಾಲುಗಳೂ ಸಮಾನವಾದ ಮಾತ್ರಾಗಣಗಳಿಂದ ಕೂಡಿರುತ್ತವೆ.ಮತ್ತು ಎರಡೆರಡು ಸಾಲುಗಳಲ್ಲಿ ಪ್ರಾಸದ ನಿಯಮವಿರುತ್ತದೆ.</p>ಅಂತ್ಯಪ್ರಾಸವೂ ಇರುವುದುಂಟು.
+</p></br>
+<strong>ಕನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿದ್ದ ರಗಳೆಗಳು ಇವು:</strong> </br></br>
+
+<a href="{{ url_for('Utsaha')}}">1. ಉತ್ಸಾಹ ರಗಳೆ</a> </br></br>
+<a href="{{ url_for('Mandanila')}}">2. ಮಂದಾನಿಲ ರಗಳೆ </a> </br></br>
+<a href="{{ url_for('Lalita')}}">3. ಲಲಿತ ರಗಳೆ </a> </h3></br></br>
+</p>
+</br></br>
+<p>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Parivardhini')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Utsaha')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು</font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು </font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font> </h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading" ><center><b><h1>ಷಟ್ಪದಿ</h1></b><center></div>
+    <div class="panel-body">
+ <h2><strong>ಷಟ್ಪದಿ</strong></h2> </br> </br>
+<h3>
+<p>	
+<b>ಷಟ್ಪದಿ</b> ಎಂಬುದು ಛಂದಸ್ಸಿನ ಒಂದು ಪ್ರಕಾರ.ಪದ್ಯವೊಂದರಲ್ಲಿ ಆರು ಪಾದಗಳಿದ್ದರೆ ಅದು ಷಟ್ಪದಿ ಎನಿಸುತ್ತದೆ.ಪಾದಗಳ ಗಣ/ಮಾತ್ರಾ</p>/ಅಕ್ಷರ ವಿನ್ಯಾಸಗಳನ್ನು ಹಿಡಿದು ಬೇರೆ ಬೇರೆ ರೀತಿಯ ಷಟ್ಪದಿಗಳಿವೆ. </P></br>
+ಆರು ಪಾದಗಳುಳ್ಳ ಪದ್ಯವು ಷಟ್ಪದಿಯೆನಿಸುಕೊಳ್ಳುತ್ತದೆ.ಇದರ ೧, ೨, ೪ ಮತ್ತು ೫ನೇ ಪಾದಗಳು ಪರಸ್ಪರ ಸಮನಾಗಿರುತ್ತದೆ.೩ನೆಯ</p> ಮತ್ತು ೬ನೆಯ ಪಾದಗಳು ಪರಸ್ಪರ ಸಮನಾಗಿರುತ್ತವೆ.೩ನೆಯ ಪಾದ ೧ನೆಯ ಪಾದದ ಒಂದೂವರೆಯಷ್ಟಿದ್ದು,ಕೊನೆಯಲ್ಲಿ ಒಂದು ಗುರುವಿನಿಂದ ಕೂಡಿರುತ್ತದೆ.</p></br>
+<b>ಕನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ಷಟ್ಪದಿ:</b> ಕನ್ನಡ ಕಾವ್ಯದಲ್ಲಿ ಷಟ್ಪದಿಗಳನ್ನು ರಾಘವಾಂಕನು ಬಳಕೆಗೆ ತಂದನು. ಹಳಗನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ಕಂದ,ಖ್ಯಾತ</p>ಕರ್ನಾಟಕ ವೃತ್ತಗಳು,ಹೇರಳವಾಗಿದ್ದರೆ ನಡುಗನ್ನಡ ಕಾಲದ ಸಾಹಿತ್ಯದಲ್ಲಿ  <b>ಷಟ್ಪದಿಗೆ ಮೊದಲ ಸ್ಥಾನ</b>.ಕುಮಾರವ್ಯಾಸನ 'ಗದುಗಿನ</p> ಭಾರತ' ವೆಂದೆ ಪ್ರಸಿದ್ಧವಾಗಿರುವ ಕರ್ಣಾಟ ಭಾರತ ಕಥಾಮಂಜರಿ,ಲಕ್ಷ್ಮೀಶಕವಿಯ ಜೈಮಿನಿ ಭಾರತ ಇವೆರಡೂ ಷಟ್ಪದಿ ಕಾವ್ಯಗಳೆ.</P>
+ಮುದ್ದಣ ವಿರಚಿತ ಶ್ರೀರಾಮ ಪಟ್ಟಾಭಿಷೇಕ ಇರುವುದು ವಾರ್ಧಕ ಷಟ್ಪದಿಯಲ್ಲಿ.</br>
+</p></br>
+
+<strong>ಕನ್ನಡ ಸಾಹಿತ್ಯದಲ್ಲಿ ಬಳಕೆಯಲ್ಲಿದ್ದ ಷಟ್ಪದಿಗಳು ಇವು:</strong> </br></p>
+
+<a href="{{ url_for('Shara')}}">1. ಶರ</a> </br>
+<a href="{{ url_for('Kusuma')}}">2. ಕುಸುಮ </a> </br>
+<a href="{{ url_for('Bhoga')}}">3. ಭೋಗ</a> </br>
+<a href="{{ url_for('Bhamini')}}">4. ಭಾಮಿನೀ</a> </br>
+<a href="{{ url_for('Vardhaka')}}">5. ವಾರ್ಧಕ</a> </br>
+<a href="{{ url_for('Parivardhini')}}">6. ಪರಿವರ್ಧಿನೀ</a> </br></p>
+
+ಇವುಗಳಲ್ಲಿ ಭಾಮಿನೀ ಷಟ್ಪದಿ ಜನಪ್ರಿಯ.ಗದುಗಿನ ಭಾರತವಿರುವುದು ಈ ಛಂದಸ್ಸಿನಲ್ಲಿಯೆ.ಭಾಮಿನೀ ಷಟ್ಪದಿಯ ಪದ್ಯವೊಂದರಲ್ಲಿ</P> ಆರು ಪಾದ(ಅಂದರೆ ಸಾಲು)ಗಳಿರುತ್ತವೆ.ಮೂರನೆಯ,ಆರನೆಯ ಸಾಲುಗಳಲ್ಲಿ  ೭ ಮಾತ್ರೆಗಳ(೩+೪) ಮೂರುಗಣಗಳೂ ಮತ್ತು ಒಂದು</p> ಗುರು ಇರುತ್ತವೆ.ಮಿಕ್ಕ ಸಾಲುಗಳಲ್ಲಿ ೭ ಮಾತ್ರೆಗಳ(೩+೪) ಎರಡು ಗಣಗಳಿರುತ್ತವೆ.ಉದಾಹರಣೆಯಾಗಿ ಗದುಗಿನ ಭಾರತದ ಈ ಪ್ರಸಿದ್ಧ</p>ಪದ್ಯವನ್ನು ನೋಡಿ:</br></p></br>
+ವೇದ ಪುರುಷನ | ಸುತನ ಸುತನ ಸ</br></p>
+ಹೋದರನ ಹೆ|ಮ್ಮಗನ ಮಗನ ತ</br></p>
+ಳೋದರಿಯ ಮಾ|ತುಳನ ಮಾವನ|ನತುಳಭುಜಬಲ|ದಿ</br></p>
+ಕಾದು ಗೆಲಿದನ|ನಣ್ಣನವ್ವೆಯ </br></p>
+ನಾದಿನಿಯ ಜಠ|ರದಲಿ ಜನಿಸಿದ</br></p>
+ನಾದಿಮೂರುತಿ|ಸಲಹೊ ಗದುಗಿನ|ವೀರನಾರಯ|ಣ</br></p>
+'|' ಸಂಜ್ಞೆ ಗಣವಿಭಾಗವನ್ನು ತೋರಿಸುತ್ತದೆ.</br></br>
+
+ಷಟ್ಪದಿಗಳೂ ಸೇರಿದಂತೆ ಹಲವಾರು ಛಂದೋಪ್ರಕಾರಗಳ ಲಕ್ಷಣಗಳ ಕೈಗೆಟುಕುವಂತಹ ವಿವರಣೆಯನ್ನು ಅ.ರಾ. ಮಿತ್ರರ 'ಛಂದೋಮಿತ್ರ'</p> ದಲ್ಲಿ ಕಾಣಬಹುದು.ಷಟ್ಪದಿಗಳ ಉಗಮ ವಿಕಾಸಗಳ ಬಗ್ಗೆ ಸಾಕಷ್ಟು ಚರ್ಚೆಗಳು ನಡೆದಿವೆ.
+ಸೇಡಿಯಾಪು ಕೃಷ್ಣಭಟ್ಟರ, ಟಿ.ವಿ. ವೆಂಕಟಾಚಲ</p> ಶಾಸ್ತ್ರಿಗಳ ಗ್ರಂಥಗಳಲ್ಲಿ ಈ ಬಗ್ಗೆ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಯನ್ನು ಕಾಣಬಹುದು.</p></h3>
+<div class="panel-footer"><ul class="pager">
+    <li class="previous"><a href="{{ url_for('Shatpadi')}}">ಹಿಂದಿನ ಪುಟ</a></li>
+    <li class="next"><a href="{{ url_for('Shara')}}">ಮುಂದಿನ ಪುಟ</a></li>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+

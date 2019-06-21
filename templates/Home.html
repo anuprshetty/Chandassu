@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{url_for('static',filename='styles/chandassu.css')}}">
+<script src="{{url_for('static',filename='styles/bootstrap/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='styles/bootstrap.min.js')}}"></script>
+<style>
+body{
+    background-color:#D3D3D3
+}
+#header{
+    background-color: blue;
+    height:60px;
+    padding:5px;
+}
+textarea{
+    width:538px;
+    border:1px solid #aaa;
+    height:350px;
+    padding:20px;
+    font-size:14pt;
+    font-weight: bold;
+    border:1px solid black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+h4{
+font-size:150%;
+}
+h5{
+font-size:600%;
+}
+h3{
+font-size:450%;
+}
+.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    )
+}
+
+
+.bg {
+  /* The image used */
+  background-image: "/home/juned/Downloads/project.png"
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top:75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered3{
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cen {
+    position:absolute;
+    top:250px;
+    left:140px;
+    width:500px;
+    height:50px;
+    background-color:orange;
+    z-index:0;
+    opacity:0.5;
+}
+.button {
+  text-align: center;
+  display: inline-block;
+  font-size: 28px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <a><h4><font color=red><b>ಕನ್ನಡ-ಛಂದಸ್ಸು</b></font></h4></a>
+    </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="{{ url_for('Home')}}"><h4>ಮುಖಪುಟ </h4></a></li>
+<li><a href="{{ url_for('Laghu_Guru')}}"><h4><font color=white>ಲಘು-ಗುರು </font></h4></a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4><font color=white>ಛಂದಸ್ಸು </font><span class="caret"></span></h4></a>
+<ul class="dropdown-menu">
+<li><a href="{{ url_for('Kandapadya')}}"><h4>ಕಂದ ಪದ್ಯ</h4></a></li>
+<li><a href="{{ url_for('Shatpadi')}}"><h4>ಷಟ್ಪದಿ</h4></a></li>
+<li><a href="{{ url_for('Ragale')}}"><h4>ರಗಳೆ</h4></a></li>
+</ul>
+<li><a href="{{ url_for('Vrutta')}}"><h4><font color=white>ವೃತ್ತ</font></h4></a></li>
+<li><a href="{{ url_for('Testing')}}"><h4><font color=white>ಪರೀಕ್ಷಿಸು</font></h4></a></li>
+<li><a href="{{ url_for('exe1')}}"><h4><font color=white>ಅಭ್ಯಾಸ</font></h4></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('About')}}"><h4><font color=white>ಮಾಹಿತಿ</font> </h4></a></li>   
+</ul>
+  </div>
+</nav>
+<div class="darken">
+<img src="{{url_for('static',filename='images/project.jpg')}}" style="width:100vw;height:100vh">
+<div class="centered1"><a href="{{ url_for('Chandassu')}}"><button class="button"><b>ಪ್ರಾರಂಭಿಸಿ</b></button></a></div>
+</div>
+<div class="centered"><b><h5><p><font color="Purple">ಸುಸ್ವಾಗತ</font></p></b></h5></div>
+<div class="centered2"><b><h3><p><font color="Red">ಕನ್ನಡ-ಛಂದಸ್ಸು</font></p></b></h3></div>
+<!--<div class="centered"><span style="background-color:#FFFF00"><h1><b><p><font color="Red">"Metric Analysis and Identification of</font></p></b></h1></span></div>
+<div class="centered2"><h1><b><p><font color="blue">Metrics for given Kannada Verse </font></p></b></h1></div>
+<div class="centered3"><h1><b><p><font color="blue">using Rule-Based Approach"</font></h1></p></b></div>-->
+<div class="footer">
+<p>
+</p>
+</br>
+</div>
+
+</body>
+</html>
+
