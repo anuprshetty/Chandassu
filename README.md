@@ -12,6 +12,7 @@ The proposed metric analyzer for Kannada verse is a rule-based teaching and lear
 - Flask Framework
 - Bootstrap Library
 - JavaScript
+- Heroku Platform
 
 ## References
 
